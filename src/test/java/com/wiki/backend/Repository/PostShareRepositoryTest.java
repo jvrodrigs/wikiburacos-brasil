@@ -24,7 +24,7 @@ public class PostShareRepositoryTest {
     @Autowired
     PostShareRepository repository;
 
-    static String URL_FIX = "http://localhost:8080/";
+    static String URL_FIX = "http://localhost:8080/public-post/share/";
 
     @Test
     @DisplayName("Save to PostShare")
