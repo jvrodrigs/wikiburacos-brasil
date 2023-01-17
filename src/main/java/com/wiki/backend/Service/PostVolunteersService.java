@@ -1,5 +1,6 @@
 package com.wiki.backend.Service;
 
+import com.wiki.backend.Exceptions.CustomException;
 import com.wiki.backend.Model.DTO.VolunteersDTO;
 import com.wiki.backend.Model.PostShare;
 import com.wiki.backend.Model.ResultPagination;
@@ -51,10 +52,31 @@ public class PostVolunteersService {
         UUID shareID = UUID.randomUUID();
 
         share.setShare(shareID.toString());
+        share.setPostId(newPost.getId().toString());
         share.setLinkShare(URL + shareID.toString());
 
         PostShare shareCreated = postShareRepository.save(share);
-        return convertEntityToDto(vl, share);
+        return convertEntityToDto(vl, shareCreated);
+    }
+
+    public VolunteersDTO getPostById(Long postId) {
+        Volunteers post = repository.findById(postId)
+                .orElseThrow( () -> new CustomException("Post ID invalid or not  found."));
+
+        PostShare shareIsExist = postShareRepository.findPostShareByPostId(post.getId().toString())
+                .orElseThrow( () -> new CustomException("There is no share link for this post."));
+
+        return convertEntityToDto(post, shareIsExist);
+    }
+
+    public VolunteersDTO getPostByLinkShare(String share){
+        PostShare shareIsExist = postShareRepository.findPostShareByShare(share)
+                .orElseThrow( () -> new CustomException("Share ID invalid or not found."));
+
+        Volunteers post = repository.findById(Long.parseLong(shareIsExist.getPostId()))
+                .orElseThrow( () -> new CustomException("There is no post for this share link."));
+
+        return convertEntityToDto(post, shareIsExist);
     }
 
     public ResultPagination<Volunteers> convertToPageToDto(List<Volunteers> data, int currentPage, Long totalElements, int totalPages){
@@ -67,6 +89,7 @@ public class PostVolunteersService {
 
         return pagination;
     }
+
 
     public VolunteersDTO convertEntityToDto(Volunteers vl, PostShare share){
         VolunteersDTO dto = new VolunteersDTO();

@@ -17,6 +17,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
@@ -48,6 +49,26 @@ public class PublicRestController {
         VolunteersDTO postCreated = service.create(post);
 
         res.setData(postCreated);
+        return ResponseEntity.status(HttpStatus.CREATED).body(res);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Response<VolunteersDTO>> getToPostById(@PathVariable Long id) {
+        Response<VolunteersDTO> res = new Response<>();
+
+        VolunteersDTO postExists = service.getPostById(id);
+
+        res.setData(postExists);
+        return ResponseEntity.status(HttpStatus.CREATED).body(res);
+    }
+
+    @GetMapping("/share/{id}")
+    public ResponseEntity<Response<VolunteersDTO>> getToPostByShare(@PathVariable("id") String idShare){
+        Response<VolunteersDTO> res = new Response<>();
+
+        VolunteersDTO postExists = service.getPostByLinkShare(idShare);
+
+        res.setData(postExists);
         return ResponseEntity.status(HttpStatus.CREATED).body(res);
     }
 

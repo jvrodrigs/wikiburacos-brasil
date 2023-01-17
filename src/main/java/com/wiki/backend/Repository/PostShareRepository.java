@@ -10,4 +10,5 @@ import java.util.Optional;
 public interface PostShareRepository extends JpaRepository<PostShare, Long> {
 
     Optional<PostShare> findPostShareByShare(String share);
+    Optional<PostShare> findPostShareByPostId(String postId);
 }

@@ -18,6 +18,7 @@ CREATE TABLE "wiki_volunteers"(
 CREATE TABLE "wiki_post_share"(
     id SERIAL PRIMARY KEY,
     share varchar not null,
+    post_id varchar not null,
     link_share varchar not null,
     created_at date not null
 );
