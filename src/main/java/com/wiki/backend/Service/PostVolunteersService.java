@@ -7,7 +7,6 @@ import com.wiki.backend.Model.ResultPagination;
 import com.wiki.backend.Model.Volunteers;
 import com.wiki.backend.Repository.PostShareRepository;
 import com.wiki.backend.Repository.VolunteersRepository;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Example;
@@ -16,6 +15,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;

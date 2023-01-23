@@ -1,7 +1,7 @@
 package com.wiki.backend.Model;
 
-import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.NotEmpty;
+import javax.persistence.Embeddable;
+import javax.validation.constraints.NotEmpty;
 
 @Embeddable
 public class Address {
