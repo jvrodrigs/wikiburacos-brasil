@@ -1,7 +1,8 @@
-<div style="display: flex; align-items: center; gap: 5rem; justify-content: center">
-    <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://spring.io/images/spring-logo-2022-dark-2f10e8055653ec50e693eb444291d742.svg" width="400"></a></p>
-    <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100"></a></p>
+<div>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://spring.io/images/spring-logo-2022-dark-2f10e8055653ec50e693eb444291d742.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100"></a></p>
 </div>
+
 # WikiBuracos
 
 A criação do WB vai dar ênfase em uma facilidade maior para as pessoas comunicarem outras sobre 
