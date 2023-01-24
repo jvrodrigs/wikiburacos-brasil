@@ -34,19 +34,19 @@ João Vitor : jvrodrigs@gmail.com
 5. [] Rotas de Públicas
     1. [x] Listagem das publicações.
     2. [x] Criação de uma nova pulicação.
-    3. [] Mais informações de uma publicação X.
+    3. [x] Mais informações de uma publicação X.
     4. [x] Após o ato da criação, gerar link de compartilhamento.
     5. [x] Criação de Usuário. 
 6. [x] Rotas de Autenticação
     1. [x] Autenticação do Usuário.
 7. [] Administrativo
     1. [] Modelagem Admin
-       1. [] Página com contador de públicação, usuários diferentes e visitas.
-       2. [] Página visualização das publicações e opções de READ e DELETE.
+       1. [x] Página com contador de públicações, usuários diferentes e visitas.
+       2. [x] Página visualização das publicações e opções de DELETE.
        3. [] Alguma ação administrativa encima de uma publicação, é necessário informar ao autor via e-mail.
     2. [] Modelagem Usuário
-       1. [] Página com suas públicações.
-       2. [] Página com todas as publicações.
+       1. [x] Página com suas públicações.
+       2. [x] Página com todas as publicações.
        3. [] Opção de comentário ou forma de avisar que é verídico aquela informação.
 8. [] Landing Page
     1. [] Apresentação do Projeto.

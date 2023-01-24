@@ -79,6 +79,13 @@ public class PostVolunteersService {
         return convertEntityToDto(post, shareIsExist);
     }
 
+    public void delPostByAdmin(Long id){
+        Volunteers post = repository.findById(id)
+                .orElseThrow( () -> new CustomException("Post ID invalid or not  found."));
+
+        repository.deleteById(id);
+    }
+
     public ResultPagination<Volunteers> convertToPageToDto(List<Volunteers> data, int currentPage, Long totalElements, int totalPages){
         ResultPagination<Volunteers> pagination = new ResultPagination<>();
 
