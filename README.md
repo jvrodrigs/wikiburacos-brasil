@@ -1,14 +1,12 @@
 # WikiBuracos
 
----
-
 A criação do WB vai dar ênfase em uma facilidade maior para as pessoas comunicarem outras sobre 
 avenidas, ruas e locais que estão com trânsito devido alguma reforma ou problemas de infraestrutura urbana. 
 Com o WB, o usuário poderá cadastrar foto, endereço e uma descrição sobre o que os outros poderem encontrar caso vá por aquele caminho.
 
 Essa aplicação está em desenvolvimento, caso você queira ajudar (dev, mentoria, melhorias) o projeto, enviar um e-mail para:
 
-`` `
+`` 
 João Vitor : jvrodrigs@gmail.com
 ``
 
