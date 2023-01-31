@@ -20,7 +20,7 @@ João Vitor : jvrodrigs@gmail.com
 1. [] Base do Projeto
     1. Tecnologias: 
         1. [x] SpringBoot (Java 17)
-        2. [] React + Vite 
+        2. [X] React + Vite 
         3. [x] Docker Back
         4. [] Docker Front 
         5. [] Amazon Web Services (AWS)
@@ -48,10 +48,10 @@ João Vitor : jvrodrigs@gmail.com
        1. [x] Página com suas públicações.
        2. [x] Página com todas as publicações.
        3. [] Opção de comentário ou forma de avisar que é verídico aquela informação.
-8. [] Landing Page
-    1. [] Apresentação do Projeto.
-    2. [] Como fazer uma públicação.
-    3. [] Informações de contato.
+8. [X] Landing Page
+    1. [X] Apresentação do Projeto.
+    2. [X] Como fazer uma públicação.
+    3. [X] Informações de contato.
 9. [] Páginas Administrativas
     1. [] Admin
     2. [] Usuário 
